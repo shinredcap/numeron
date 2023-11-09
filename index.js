@@ -51,19 +51,28 @@ form.addEventListener("submit",(e)=>{
         if(afirstCharacter === firstCharacter){
             eat+=1;
         }
-        if(afirstCharacter === secondCharacter || afirstCharacter === thirdCharacter){
+        if(afirstCharacter === secondCharacter ){
+            bite++;
+        }
+        if(afirstCharacter === thirdCharacter){
             bite+= 1;
         }
         if(asecondCharacter === secondCharacter){
             eat+=1;
         }
-        if(asecondCharacter === thirdCharacter || asecondCharacter === firstCharacter){
+        if(asecondCharacter === thirdCharacter ){
+            bite++;
+        } 
+        if(asecondCharacter === firstCharacter){
             bite+=1;
         }
         if(athirdCharacter === thirdCharacter){
             eat+=1;
         }
-        if(athirdCharacter === secondCharacter || athirdCharacter === firstCharacter){
+        if(athirdCharacter === secondCharacter ){
+            bite++;
+        } 
+        if(athirdCharacter === firstCharacter){
             bite+=1;
         }
         
